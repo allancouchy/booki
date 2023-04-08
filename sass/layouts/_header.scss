@@ -102,10 +102,25 @@
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       border-color: transparent;
+
+      @include mob {
+        display: none;
+      }
     }
 
     &__button {
+      width: 60px;
       display: none;
+      color: $colorWhite;
+      background-color: $colorPrimary;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      align-items: center;
+      justify-content: center;
+
+      @include mob {
+        display: flex;
+      }
     }
   }
 
@@ -114,16 +129,22 @@
     align-items: flex-start;
 
     @include mob {
-      margin-top: 20px;
+      flex-direction: column;
+      margin: 20px 0px;
     }
 
     &__ttl {
       width: 10%;
+      min-width: 100px;
       height: 48px;
       display: flex;
       font-size: 19px;
       align-items: center;
       margin: 0px;
+      
+      @include mob {
+        margin-bottom: 10px;
+      }
     }
 
     &__bloc {
@@ -131,6 +152,7 @@
       display: flex;
       flex-wrap: wrap;
       list-style-type: none;
+      padding: 0px;
       margin: 0px;
     }
 
@@ -149,6 +171,10 @@
       &:hover {
         color: $colorPrimary;
         background-color: $colorSecondary;
+      }
+
+      @include mob {
+        margin-left: 0px;
       }
     }
 
