@@ -71,9 +71,9 @@
     text-decoration: none;
     border: 5px solid $colorWhite;
     background-color: $colorWhite;
-    box-shadow: 8px 8px 10px darken($colorWhite, 10);
     margin: 7px 0px;
     @extend %borderRadius;
+    @extend %boxShadow;
     
     &--all {
       width: 32%;
@@ -183,3 +183,162 @@
   }
 }
 
+/* activities section */
+
+.activities {
+  width: 100%;
+  padding: 20px 0px;
+
+  @include tab {
+    padding: 20px;
+  }
+
+  &__ttl {
+    font-size: 22px;
+  }
+
+  &__bloc {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mob {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+  &__container {
+    width: 49.5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    @include tab {
+      width: 49%;
+      flex-direction: column;
+    }
+
+    @include mob {
+      width: 100%;
+      height: 50%;
+      margin: 0px;
+    }
+
+    &--small {
+      width: 49.5%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include tab {
+        width: 100%;
+        height: 66%;
+      }
+
+      @include mob {
+        width: 100%;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    @extend %borderRadius;
+    @extend %boxShadow;
+
+    &--1 {
+      width: 49%;
+      height: 100%;
+      
+      @include tab {
+        width: 100%;
+        height: 30%;
+      }
+    }
+    
+    &--2 {
+      width: 100%;
+      height: 65%;
+    }
+    
+    &--3 {
+      width: 100%;
+      height: 29%;
+    }
+    
+    &--2,
+    &--3 {
+      @include tab {
+        height: 47%;
+      }
+    }
+    
+    &--1, 
+    &--2,
+    &--3 {
+      @include mob {
+        height: 250px;
+        margin: 10px 0px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+
+      &--1 {
+        height: 87%;
+      }
+
+      &--2 {
+        height: 80%;
+      }
+
+      &--3 {
+        height: 55%;
+      }
+
+      &--1,
+      &--2,
+      &--3 {
+        @include tab {
+          height: 70%;
+        }
+      }
+    }
+
+    &__ttl {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 0px;
+
+      &--1 {
+        height: 13%;
+      }
+
+      &--2 {
+        height: 20%;
+      }
+
+      &--3 {
+        height: 45%;
+      }
+
+      &--1,
+      &--2,
+      &--3 {
+        @include tab {
+          height: 30%;
+        }
+      }
+    }
+  }
+}
