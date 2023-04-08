@@ -1,0 +1,31 @@
+/* basic style configuration */
+
+body {
+  font-family: raleway, serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+main {
+  width: 90%;
+
+  @include tab {
+    width: 100%;
+  }
+}
+
+img {
+  object-fit: cover;
+}
