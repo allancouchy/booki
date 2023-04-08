@@ -15,7 +15,44 @@
 
   <!-- header -->
   <header class="header">
+    <div class="header__top">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo__element" src="images/logo/booki.svg" alt="logo" title="accueil">
+      </a>
+      <nav class="header__nav">
+        <a class="header__nav__element" href="#housings">Hébergements</a>
+        <a class="header__nav__element" href="#activities">Activités</a>
+      </nav>
+    </div>
 
+    <!-- page title -->
+    <h1 class="header__ttl">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p class="header__subttl">En plein centre ville ou en pleine nature</p>
+
+    <!-- search form -->
+    <form class="header__form" method="post">
+      <i class="header__form__icon fas fa-location-dot"></i>
+      <input type="search" name="search" class="header__form__input" placeholder="Marseille, France">
+      <input type="submit" name="search" class="header__form__submit" value="Rechercher">
+      <i class="header__form__button fa-solid fa-magnifying-glass"></i>
+    </form>
+
+    <!-- filter -->
+    <div class="header__filter">
+      <h2 class="header__filter__ttl">Filtres</h2>
+      <ul class="header__filter__bloc">
+        <li class="header__filter__element"><i class=" header__filter__icon fas fa-money-bill-wave"></i>Economique</li>
+        <li class="header__filter__element"><i class=" header__filter__icon fas fa-child-reaching"></i>Familial</li>
+        <li class="header__filter__element"><i class=" header__filter__icon fas fa-heart"></i>Romantique</li>
+        <li class="header__filter__element"><i class=" header__filter__icon fas fa-dog"></i>Animaux autorisés</li>
+      </ul>
+    </div>
+
+    <!-- info -->
+    <div class="header__info">
+      <i class="header__info__icon fas fa-info"></i>
+      <p class="header__info__text">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
   </header>
 
   <!-- main content -->
